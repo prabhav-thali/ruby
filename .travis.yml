@@ -10,10 +10,10 @@
 # manage, please check the link below.
 # https://github.com/ruby/ruby/wiki/CI-Servers#travis-ci
 
+
 # We enable Travis on the specific branches or forked repositories here.
 if: >-
-  (repo != ruby/ruby OR branch = master OR branch =~ /^ruby_\d_\d$/)
-  AND (commit_message !~ /\[DOC\]/)
+  (branch = master OR branch =~ /^ruby_\d_\d$/)
 
 language: c
 
